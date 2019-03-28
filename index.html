@@ -9,24 +9,42 @@
   <link rel="icon" href="images/favicon.png">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
   <!-- start of header  -->
-  <header>
-    <div class="pull-right">
-      <span>Already have an Intuit account?</span>
-      <span>I forgot my User ID or Passwor</span>
+  <header class="row">
+    <div class="pull-right flex-container top-header">
+		<div class="forgot-password">
+    		<p>Already have an Intuit account?</p>
+      		<p><a href="#">I forgot my User ID or Passwor</a></p>
+      	</div>
+      <div>
       <button class="btn btn-primary" type="button" name="button">Sign In</button>
+      </div>
     </div>
   </header>
   <!-- end of header -->
 
+
+
   <!-- start of main  -->
   <main>
+
+  	<section id="logo-container">
+  		<a class="logo" href="#">&nbsp;</a>
+  		<ul class="logo-bottom">
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  		</ul>
+  	</section>
     <div class="form-container">
       <div class="form-header">
         <h1>One Account.<br>Everything Intuit.</h1>
@@ -35,23 +53,28 @@
       <div class="form-body">
         <form class="" action="index.html" method="post">
           <div class="input-with-label">
-            <label for="">Email address</label>
-            <input type="text" name="" value="">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="" value="" required>
           </div>
 
           <div class="input-with-label">
-            <label for="">Phone (recommended)</label>
-            <input type="text" name="" value="">
+            <label for="phone">Phone (recommended)</label>
+            <input type="tel" id="phone" name="" value="">
             <span class="info">Standard call, messaging or data rates may apply.</span>
           </div>
 
           <div class="input-with-label">
-            <label for="">Password</label>
-            <input type="password" name="" value="">
+            <label for="password" >Password</label>
+            <input type="password" id="password" name="" value="" required>
+          </div>
+
+          <div class="input-with-label">
+          	<label for="confirm-password" >Confirm password</label>
+          	<input type="password" id="confirm-password" name="" value="" required>
           </div>
 
           <div class="">
-            <button class="btn btn-primary" type="button" name="button">Create Account</button>
+            <button class="btn btn-primary" type="submit" name="button"><i class="fas fa-lock"></i>Create Account</button>
           </div>
         </form>
       </div>
@@ -69,6 +92,13 @@
 
   <!-- start of footer  -->
   <footer>
+  	<ul>
+  		<li><a href="#">Legal</a></li>
+  		<li><a href="#">Privacy</a></li>
+  		<li><a href="#">Security</a></li>
+  	</ul>
+  	<p>© 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br/>
+Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
   </footer>
   <!--  end of footer -->
 
