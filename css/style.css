@@ -235,16 +235,16 @@ button i {
 }
 
 .form-privacy {
-  font-style: italic;
   font-size: 12px;
+  font-style: italic;
   padding: 0 30px 20px 30px;
   text-align: center;
 }
 
 .form-footer {
   background-color: #ECEEF1;
-  font-style: italic;
   font-size: 12px;
+  font-style: italic;
   text-align: center;
   padding: 12px;
 }
